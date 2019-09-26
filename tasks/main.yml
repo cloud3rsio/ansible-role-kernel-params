@@ -1,0 +1,9 @@
+---
+- name: Set kernel params
+  template:
+    src: 10-custom.conf.j2
+    dest: /etc/sysctl.d/10-custom.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: set_sysctl

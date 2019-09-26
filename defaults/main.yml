@@ -1,0 +1,14 @@
+---
+kernel_params:
+  - vm.swappiness = 1
+  - fs.file-max = 800777
+  - net.netfilter.nf_conntrack_max = 655350
+  - net.nf_conntrack_max = 655350
+  - net.ipv4.ip_local_port_range = 10240 60999
+  - net.ipv4.tcp_tw_reuse = 1
+  - net.ipv4.tcp_fin_timeout = 10
+  - net.ipv4.tcp_tw_recycle = 0
+  - net.ipv4.tcp_keepalive_time = 20
+  - net.ipv4.tcp_keepalive_probes = 4
+  - net.ipv4.tcp_keepalive_intvl = 5
+  - net.core.somaxconn = 1024
